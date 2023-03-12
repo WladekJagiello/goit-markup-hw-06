@@ -949,7 +949,7 @@ textarea::placeholder {
 
 .form-check:hover .check-label,
 .form-check:focus .check-label {
-  color: var(--hover-color);
+  color: var(--hero-color);
 }
 
 .privacy-policy {
