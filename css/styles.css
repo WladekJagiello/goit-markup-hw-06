@@ -942,6 +942,14 @@ textarea::placeholder {
   line-height: 1.17;
   letter-spacing: var(--letter-spacing-h);
   color: #8e8f99;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-check:hover .check-label,
+.form-check:focus .check-label {
+  color: var(--hover-color);
 }
 
 .privacy-policy {
