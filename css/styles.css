@@ -953,7 +953,7 @@ textarea::placeholder {
 }
 
 .privacy-policy {
-  color: var(--links-color);
+  color: var(--hover-color);
 }
 
 /* button */
