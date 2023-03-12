@@ -919,14 +919,12 @@ textarea::placeholder {
 
 .checkbox:focus {
   outline: 0;
-  background-color: var(--hover-color);
   border: 1px solid var(--hover-color);
 }
 
 .form-check:hover .checkbox,
 .form-check:focus .checkbox {
   appearance: none;
-  background-color: var(--hover-color);
   border: 1px solid var(--hover-color);
 }
 
