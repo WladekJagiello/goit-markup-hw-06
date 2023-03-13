@@ -909,9 +909,6 @@ textarea::placeholder {
   height: 16px;
   margin-right: 8px;
   background-color: var(--magic-color);
-  background-image: url("../images/vector.svg");
-  background-position: center;
-  background-repeat: no-repeat;
   border: 1px solid var(--hero-color);
   border-radius: 2px;
   cursor: pointer;
