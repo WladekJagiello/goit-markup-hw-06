@@ -226,9 +226,8 @@ main {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -550,7 +549,6 @@ main {
   width: 264px;
   height: 40px;
   padding-left: 16px;
-  /* padding-bottom: 4px; */
   color: var(--magic-color);
   background-color: var(--hero-color);
   border: 1px solid #ffffff;
@@ -585,15 +583,15 @@ main {
   width: 165px;
   height: 40px;
   border: 0;
+  cursor: pointer;
   font-weight: var(--font-weight-h);
   line-height: var(--line-height-p);
   letter-spacing: var(--letter-spacing-p);
   color: var(--magic-color);
   border-radius: 4px;
   background-color: var(--links-color);
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .foot-button:hover,
@@ -790,12 +788,12 @@ main {
   align-items: center;
   width: 24px;
   height: 24px;
+  cursor: pointer;
   background-color: var(--accent-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-icon {
@@ -872,6 +870,7 @@ main {
   padding: 10px 16px;
   border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
+  resize: none;
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -910,21 +909,20 @@ textarea::placeholder {
   height: 16px;
   margin-right: 8px;
   background-color: var(--magic-color);
+  background-image: url("../images/vector.svg");
+  background-position: center;
+  background-repeat: no-repeat;
   border: 1px solid var(--hero-color);
   border-radius: 2px;
+  cursor: pointer;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.checkbox:hover,
 .checkbox:focus {
   outline: 0;
-  border: 1px solid var(--hover-color);
-}
-
-.form-check:hover .checkbox,
-.form-check:focus .checkbox {
-  appearance: none;
   border: 1px solid var(--hover-color);
 }
 
@@ -938,21 +936,23 @@ textarea::placeholder {
 }
 
 .check-label {
+  display: flex;
+  align-items: center;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: var(--letter-spacing-h);
   color: #8e8f99;
+  cursor: pointer;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-check:hover .check-label,
-.form-check:focus .check-label {
-  color: var(--hero-color);
-}
-
 .privacy-policy {
+  margin-left: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: var(--letter-spacing-h);
   color: var(--hover-color);
 }
 
@@ -968,6 +968,7 @@ textarea::placeholder {
   margin-top: 24px;
   width: 169px;
   height: 56px;
+  cursor: pointer;
   font-weight: var(--font-weight-h);
   line-height: var(--line-height-p);
   letter-spacing: var(--letter-spacing-h);
@@ -975,9 +976,8 @@ textarea::placeholder {
   background-color: var(--links-color);
   border-radius: 4px;
   border: 0;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-button-text:hover,
