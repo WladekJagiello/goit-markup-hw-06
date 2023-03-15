@@ -900,6 +900,9 @@ textarea::placeholder {
   height: 16px;
   margin-right: 8px;
   background-color: var(--white);
+  background-image: url("../images/vector.svg");
+  background-position: center;
+  background-repeat: no-repeat;
   border: 1px solid var(--navy-blue);
   border-radius: 2px;
   cursor: pointer;
@@ -917,15 +920,15 @@ textarea::placeholder {
 .checkbox:checked {
   appearance: none;
   background-color: var(--ocean);
-
   border: 1px solid var(--ocean);
 }
 
-.chek-icon {
+/* .chek-icon {
   position: absolute;
   top: 4;
   margin-left: 3px;
-}
+  cursor: pointer;
+} */
 
 .check-label {
   display: flex;
